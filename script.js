@@ -34,7 +34,7 @@ function updateDotColor(color) {
 dotElement.addEventListener('click', () => {
     // Determine the new color
     const currentColor = dotElement.style.backgroundColor || 'red'; // Default to red if not set
-    const newColor = currentColor === 'red' ? 'blue' : 'red';
+    const newColor = currentColor === 'red' ? 'green' : 'red';
 
     // Update Firestore
     gameDocRef.set({ color: newColor })
